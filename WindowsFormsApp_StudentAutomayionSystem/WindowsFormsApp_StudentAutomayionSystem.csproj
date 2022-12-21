@@ -54,16 +54,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StudnetLogin.cs">
+    <Compile Include="Student\HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controles\StudnetLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="StudnetLogin.Designer.cs">
+    <Compile Include="User Controles\StudnetLogin.Designer.cs">
       <DependentUpon>StudnetLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherLogin.cs">
+    <Compile Include="User Controles\TeacherLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TeacherLogin.Designer.cs">
+    <Compile Include="User Controles\TeacherLogin.Designer.cs">
       <DependentUpon>TeacherLogin.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Login.resx">
@@ -77,11 +83,15 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="StudnetLogin.resx">
+    <EmbeddedResource Include="Student\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controles\StudnetLogin.resx">
       <DependentUpon>StudnetLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherLogin.resx">
+    <EmbeddedResource Include="User Controles\TeacherLogin.resx">
       <DependentUpon>TeacherLogin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -96,6 +106,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Teacher\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\images\blank-profile-picture.png" />
+    <Content Include="assets\images\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

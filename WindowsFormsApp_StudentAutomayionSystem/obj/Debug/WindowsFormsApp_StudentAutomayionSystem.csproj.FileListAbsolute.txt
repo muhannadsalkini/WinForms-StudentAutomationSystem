@@ -11,3 +11,4 @@ D:\Uni\5. Semester\Visual Programming\Project\WinFormsApp_StudentAutomayionSyste
 D:\Uni\5. Semester\Visual Programming\Project\WinFormsApp_StudentAutomayionSystem\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.csproj.CoreCompileInputs.cache
 D:\Uni\5. Semester\Visual Programming\Project\WinFormsApp_StudentAutomayionSystem\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.exe
 D:\Uni\5. Semester\Visual Programming\Project\WinFormsApp_StudentAutomayionSystem\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.pdb
+D:\Uni\5. Semester\Visual Programming\Project\WinFormsApp_StudentAutomayionSystem\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.Student.HomePage.resources

@@ -32,12 +32,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.teacherLogin1 = new WindowsFormsApp_StudentAutomayionSystem.TeacherLogin();
             this.studnetLogin1 = new WindowsFormsApp_StudentAutomayionSystem.StudnetLogin();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.Location = new System.Drawing.Point(117, 144);
+            this.button1.Location = new System.Drawing.Point(101, 226);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 35);
             this.button1.TabIndex = 0;
@@ -48,7 +50,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Gray;
-            this.button2.Location = new System.Drawing.Point(117, 225);
+            this.button2.Location = new System.Drawing.Point(101, 289);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 35);
             this.button2.TabIndex = 1;
@@ -59,6 +61,7 @@
             // teacherLogin1
             // 
             this.teacherLogin1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.teacherLogin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.teacherLogin1.Location = new System.Drawing.Point(323, 66);
             this.teacherLogin1.Name = "teacherLogin1";
             this.teacherLogin1.Size = new System.Drawing.Size(400, 300);
@@ -67,10 +70,21 @@
             // studnetLogin1
             // 
             this.studnetLogin1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.studnetLogin1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.studnetLogin1.Location = new System.Drawing.Point(323, 66);
             this.studnetLogin1.Name = "studnetLogin1";
             this.studnetLogin1.Size = new System.Drawing.Size(400, 300);
             this.studnetLogin1.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(88, 53);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
@@ -78,6 +92,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.teacherLogin1);
             this.Controls.Add(this.studnetLogin1);
             this.Controls.Add(this.button2);
@@ -85,6 +100,7 @@
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,6 +111,7 @@
         private System.Windows.Forms.Button button2;
         private StudnetLogin studnetLogin1;
         private TeacherLogin teacherLogin1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
