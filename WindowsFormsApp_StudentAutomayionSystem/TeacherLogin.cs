@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_StudentAutomayionSystem
 {
-    public partial class Form1 : Form
+    public partial class TeacherLogin : UserControl
     {
-        public Form1()
+        public TeacherLogin()
         {
             InitializeComponent();
         }
