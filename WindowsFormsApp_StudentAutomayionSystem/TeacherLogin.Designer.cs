@@ -33,18 +33,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Login = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 56);
+            this.textBox1.Location = new System.Drawing.Point(120, 70);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 20);
             this.textBox1.TabIndex = 0;
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(113, 136);
+            this.maskedTextBox1.Location = new System.Drawing.Point(120, 140);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(160, 20);
             this.maskedTextBox1.TabIndex = 1;
@@ -52,7 +53,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 40);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(117, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 2;
@@ -61,7 +63,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 120);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(117, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 3;
@@ -69,17 +72,30 @@
             // 
             // Login
             // 
-            this.Login.Location = new System.Drawing.Point(148, 206);
+            this.Login.BackColor = System.Drawing.Color.Gray;
+            this.Login.Location = new System.Drawing.Point(155, 200);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(90, 35);
             this.Login.TabIndex = 4;
             this.Login.Text = "Login";
-            this.Login.UseVisualStyleBackColor = true;
+            this.Login.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(162, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Teacher Login";
             // 
             // TeacherLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -99,5 +115,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Login;
+        private System.Windows.Forms.Label label3;
     }
 }
