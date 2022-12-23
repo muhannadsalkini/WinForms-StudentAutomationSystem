@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login.cs">
+    <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +59,24 @@
     </Compile>
     <Compile Include="Student\HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\HomePagecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\HomePagecs.Designer.cs">
+      <DependentUpon>HomePagecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="User Controles\StudnetLogin.cs">
       <SubType>UserControl</SubType>
@@ -72,8 +90,8 @@
     <Compile Include="User Controles\TeacherLogin.Designer.cs">
       <DependentUpon>TeacherLogin.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +105,12 @@
     </Compile>
     <EmbeddedResource Include="Student\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controles\StudnetLogin.resx">
       <DependentUpon>StudnetLogin.cs</DependentUpon>
@@ -107,9 +131,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Teacher\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="assets\images\blank-profile-picture.png" />
     <Content Include="assets\images\logo.png" />

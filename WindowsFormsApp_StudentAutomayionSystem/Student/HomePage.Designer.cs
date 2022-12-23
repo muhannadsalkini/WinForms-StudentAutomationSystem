@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.userPicture = new System.Windows.Forms.PictureBox();
             this.name = new System.Windows.Forms.Label();
             this.studentNumber = new System.Windows.Forms.Label();
             this.takenCourses = new System.Windows.Forms.Button();
@@ -40,20 +40,20 @@
             this.notifacations = new System.Windows.Forms.Button();
             this.academicCalender = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // userPicture
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.blank_profile_picture;
-            this.pictureBox1.Location = new System.Drawing.Point(64, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.userPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userPicture.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.blank_profile_picture;
+            this.userPicture.Location = new System.Drawing.Point(64, 48);
+            this.userPicture.Name = "userPicture";
+            this.userPicture.Size = new System.Drawing.Size(77, 77);
+            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userPicture.TabIndex = 0;
+            this.userPicture.TabStop = false;
             // 
             // name
             // 
@@ -173,10 +173,10 @@
             this.Controls.Add(this.takenCourses);
             this.Controls.Add(this.studentNumber);
             this.Controls.Add(this.name);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.userPicture);
             this.Name = "HomePage";
             this.Text = "homePage";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -185,7 +185,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox userPicture;
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Label studentNumber;
         private System.Windows.Forms.Button takenCourses;
