@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp_StudentAutomayionSystem.Teacher
 {
-    partial class HomePagecs
+    partial class HomePage
     {
         /// <summary>
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_StudentAutomayionSystem.Teacher
 {
-    public partial class HomePagecs : Form
+    public partial class HomePage : Form
     {
-        public HomePagecs()
+        public HomePage()
         {
             InitializeComponent();
         }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Collections;
 
 namespace WindowsFormsApp_StudentAutomayionSystem.Student
 {
@@ -18,11 +19,9 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             InitializeComponent();
         }
 
-
         SqlConnection con = new SqlConnection("Data Source=MUHOHAN;Initial Catalog=studentautomayionsystem;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
-
 
         private void buttonlogin_Click(object sender, EventArgs e)
         {
@@ -34,9 +33,11 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
 
+
             if (dr.Read() == true)
             {
-                new HomePage().Show();
+                string studentId = dr["id"].ToString();
+                new HomePage(studentId).Show();
                 this.Hide();
             }
             else
@@ -72,6 +73,11 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
         {
             new home().Show();
             this.Hide();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

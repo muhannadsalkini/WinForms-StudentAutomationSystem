@@ -66,11 +66,11 @@
     <Compile Include="Student\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teacher\HomePagecs.cs">
+    <Compile Include="Teacher\HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Teacher\HomePagecs.Designer.cs">
-      <DependentUpon>HomePagecs.cs</DependentUpon>
+    <Compile Include="Teacher\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="Teacher\Login.cs">
       <SubType>Form</SubType>

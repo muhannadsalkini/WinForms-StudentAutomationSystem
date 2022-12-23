@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp_StudentAutomayionSystem;
-using WindowsFormsApp_StudentAutomayionSystem.Student;
+using WindowsFormsApp_StudentAutomayionSystem.Teacher;
 
 namespace WindowsFormsApp_StudentAutomayionSystem.Teacher
 {
@@ -29,7 +29,7 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Teacher
             con.Close();
             con.Open();
 
-            string login = "SELECT * FROM Teachers WHERE e_mail='" + textboxemail.Text + "' and password='" + textboxpassword.Text + "'";
+            string login = "SELECT  FROM Teachers WHERE e_mail='" + textboxemail.Text + "' and password='" + textboxpassword.Text + "'";
             cmd = new SqlCommand(login, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();

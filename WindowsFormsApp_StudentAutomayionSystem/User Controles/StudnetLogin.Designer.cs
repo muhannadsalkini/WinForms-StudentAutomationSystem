@@ -45,7 +45,6 @@
             this.StudentNumberTextBox.Name = "StudentNumberTextBox";
             this.StudentNumberTextBox.Size = new System.Drawing.Size(212, 22);
             this.StudentNumberTextBox.TabIndex = 0;
-            this.StudentNumberTextBox.TextChanged += new System.EventHandler(this.StudentNumberTextBox_TextChanged);
             // 
             // PasswordTextBox
             // 
@@ -67,7 +66,6 @@
             this.label1.Size = new System.Drawing.Size(103, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Student Number";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -92,7 +90,6 @@
             this.Login.TabIndex = 4;
             this.Login.Text = "Login";
             this.Login.UseVisualStyleBackColor = false;
-            this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
             // label3
             // 
@@ -119,7 +116,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "StudnetLogin";
             this.Size = new System.Drawing.Size(533, 369);
-            this.Load += new System.EventHandler(this.StudnetLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
