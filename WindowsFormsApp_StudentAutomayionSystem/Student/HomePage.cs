@@ -32,7 +32,7 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             con.Close();
             con.Open();
 
-            string student = "SELECT * FROM Students WHERE Id='" + studentId + "'";
+            string student = "SELECT Students.name, surname, student_number, regester_date, Departments.name AS department FROM Students, Departments WHERE Students.Id='" + studentId + "' AND Students.department_id= Departments.Id";
             cmd = new SqlCommand(student, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
@@ -41,6 +41,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             {
                 labelname.Text = dr["name"].ToString() +" "+ dr["surname"].ToString();
                 labelstudentnumber.Text = dr["student_number"].ToString();
+                labelregesterdate.Text = dr["regester_date"].ToString().Substring(0,10);
+                labelprogram.Text = dr["department"].ToString();
             }
             else
             {
