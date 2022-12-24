@@ -39,14 +39,6 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             {
                 while (dr.Read())
                 {
-                    //con.Close();
-                    //con.Open();
-                    //string teacher = "SELECT * FROM Teachers WHERE Id = '" + dr["teacher_id"].ToString() + "')";
-                    //cmd = new SqlCommand(teacher, con);
-                    //cmd.ExecuteNonQuery();
-                    //SqlDataReader dr2 = cmd.ExecuteReader();
-                    //con.Close();
-                    //con.Open();
                     switch (dr["day"])
                     {
                         case "Sunday":
