@@ -68,5 +68,11 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             new AcademicCalender(studentId).Show();
             this.Close();
         }
+
+        private void semesterAverages_Click(object sender, EventArgs e)
+        {
+            new SemesterAverages(studentId).Show();
+            this.Close();
+        }
     }
 }

@@ -51,19 +51,20 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             this.back = new System.Windows.Forms.Label();
             this.sunadydatagrid = new System.Windows.Forms.DataGridView();
-            this.saturdaydatagrid = new System.Windows.Forms.DataGridView();
-            this.fridaydatagrid = new System.Windows.Forms.DataGridView();
-            this.thursdaydatagrid = new System.Windows.Forms.DataGridView();
-            this.wednesdaydatagrid = new System.Windows.Forms.DataGridView();
-            this.tuesdaydatagrid = new System.Windows.Forms.DataGridView();
-            this.mondaydatagrid = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sundaycolumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saturdaydatagrid = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fridaydatagrid = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thursdaydatagrid = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wednesdaydatagrid = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tuesdaydatagrid = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mondaydatagrid = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sunadydatagrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.saturdaydatagrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fridaydatagrid)).BeginInit();
@@ -121,7 +122,7 @@
             this.sunadydatagrid.EnableHeadersVisualStyles = false;
             this.sunadydatagrid.GridColor = System.Drawing.Color.Silver;
             this.sunadydatagrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.sunadydatagrid.Location = new System.Drawing.Point(39, 97);
+            this.sunadydatagrid.Location = new System.Drawing.Point(36, 126);
             this.sunadydatagrid.Name = "sunadydatagrid";
             this.sunadydatagrid.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -137,6 +138,14 @@
             this.sunadydatagrid.RowTemplate.Height = 17;
             this.sunadydatagrid.Size = new System.Drawing.Size(141, 374);
             this.sunadydatagrid.TabIndex = 15;
+            // 
+            // sundaycolumn
+            // 
+            this.sundaycolumn.HeaderText = "Sunday";
+            this.sundaycolumn.MinimumWidth = 6;
+            this.sundaycolumn.Name = "sundaycolumn";
+            this.sundaycolumn.ReadOnly = true;
+            this.sundaycolumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // saturdaydatagrid
             // 
@@ -172,7 +181,7 @@
             this.saturdaydatagrid.EnableHeadersVisualStyles = false;
             this.saturdaydatagrid.GridColor = System.Drawing.Color.Silver;
             this.saturdaydatagrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.saturdaydatagrid.Location = new System.Drawing.Point(885, 97);
+            this.saturdaydatagrid.Location = new System.Drawing.Point(882, 126);
             this.saturdaydatagrid.Name = "saturdaydatagrid";
             this.saturdaydatagrid.ReadOnly = true;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -188,6 +197,14 @@
             this.saturdaydatagrid.RowTemplate.Height = 17;
             this.saturdaydatagrid.Size = new System.Drawing.Size(141, 374);
             this.saturdaydatagrid.TabIndex = 15;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Saturday";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // fridaydatagrid
             // 
@@ -223,7 +240,7 @@
             this.fridaydatagrid.EnableHeadersVisualStyles = false;
             this.fridaydatagrid.GridColor = System.Drawing.Color.Silver;
             this.fridaydatagrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.fridaydatagrid.Location = new System.Drawing.Point(744, 97);
+            this.fridaydatagrid.Location = new System.Drawing.Point(741, 126);
             this.fridaydatagrid.Name = "fridaydatagrid";
             this.fridaydatagrid.ReadOnly = true;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -239,6 +256,14 @@
             this.fridaydatagrid.RowTemplate.Height = 17;
             this.fridaydatagrid.Size = new System.Drawing.Size(141, 374);
             this.fridaydatagrid.TabIndex = 15;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Friday";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // thursdaydatagrid
             // 
@@ -274,7 +299,7 @@
             this.thursdaydatagrid.EnableHeadersVisualStyles = false;
             this.thursdaydatagrid.GridColor = System.Drawing.Color.Silver;
             this.thursdaydatagrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.thursdaydatagrid.Location = new System.Drawing.Point(603, 97);
+            this.thursdaydatagrid.Location = new System.Drawing.Point(600, 126);
             this.thursdaydatagrid.Name = "thursdaydatagrid";
             this.thursdaydatagrid.ReadOnly = true;
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -290,6 +315,14 @@
             this.thursdaydatagrid.RowTemplate.Height = 17;
             this.thursdaydatagrid.Size = new System.Drawing.Size(141, 374);
             this.thursdaydatagrid.TabIndex = 15;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Thursday";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // wednesdaydatagrid
             // 
@@ -325,7 +358,7 @@
             this.wednesdaydatagrid.EnableHeadersVisualStyles = false;
             this.wednesdaydatagrid.GridColor = System.Drawing.Color.Silver;
             this.wednesdaydatagrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.wednesdaydatagrid.Location = new System.Drawing.Point(462, 97);
+            this.wednesdaydatagrid.Location = new System.Drawing.Point(459, 126);
             this.wednesdaydatagrid.Name = "wednesdaydatagrid";
             this.wednesdaydatagrid.ReadOnly = true;
             dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -341,6 +374,14 @@
             this.wednesdaydatagrid.RowTemplate.Height = 17;
             this.wednesdaydatagrid.Size = new System.Drawing.Size(141, 374);
             this.wednesdaydatagrid.TabIndex = 15;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Wednesday";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // tuesdaydatagrid
             // 
@@ -376,7 +417,7 @@
             this.tuesdaydatagrid.EnableHeadersVisualStyles = false;
             this.tuesdaydatagrid.GridColor = System.Drawing.Color.Silver;
             this.tuesdaydatagrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tuesdaydatagrid.Location = new System.Drawing.Point(321, 97);
+            this.tuesdaydatagrid.Location = new System.Drawing.Point(318, 126);
             this.tuesdaydatagrid.Name = "tuesdaydatagrid";
             this.tuesdaydatagrid.ReadOnly = true;
             dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -392,6 +433,14 @@
             this.tuesdaydatagrid.RowTemplate.Height = 17;
             this.tuesdaydatagrid.Size = new System.Drawing.Size(141, 374);
             this.tuesdaydatagrid.TabIndex = 15;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Tuesday";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // mondaydatagrid
             // 
@@ -427,7 +476,7 @@
             this.mondaydatagrid.EnableHeadersVisualStyles = false;
             this.mondaydatagrid.GridColor = System.Drawing.Color.Silver;
             this.mondaydatagrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.mondaydatagrid.Location = new System.Drawing.Point(180, 97);
+            this.mondaydatagrid.Location = new System.Drawing.Point(177, 126);
             this.mondaydatagrid.Name = "mondaydatagrid";
             this.mondaydatagrid.ReadOnly = true;
             dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -444,22 +493,6 @@
             this.mondaydatagrid.Size = new System.Drawing.Size(141, 374);
             this.mondaydatagrid.TabIndex = 15;
             // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Tuesday";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // sundaycolumn
-            // 
-            this.sundaycolumn.HeaderText = "Sunday";
-            this.sundaycolumn.MinimumWidth = 6;
-            this.sundaycolumn.Name = "sundaycolumn";
-            this.sundaycolumn.ReadOnly = true;
-            this.sundaycolumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.HeaderText = "Monday";
@@ -468,37 +501,17 @@
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // dataGridViewTextBoxColumn4
+            // label1
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Wednesday";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Thursday";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Friday";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Saturday";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(384, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(267, 33);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Course Schedule";
             // 
             // Course_Schedule
             // 
@@ -506,6 +519,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1067, 556);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.mondaydatagrid);
             this.Controls.Add(this.tuesdaydatagrid);
             this.Controls.Add(this.wednesdaydatagrid);
@@ -516,7 +530,7 @@
             this.Controls.Add(this.back);
             this.Name = "Course_Schedule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Course_Schedule";
+            this.Text = "Course Schedule";
             this.Load += new System.EventHandler(this.Course_Schedule_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sunadydatagrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saturdaydatagrid)).EndInit();
@@ -546,5 +560,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.Label label1;
     }
 }

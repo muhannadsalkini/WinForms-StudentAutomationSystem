@@ -34,72 +34,65 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             cmd = new SqlCommand(student, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
-            
-            if (dr.Read() == true)
+
+            while (dr.Read())
             {
-                while (dr.Read())
+                switch (dr["day"])
                 {
-                    switch (dr["day"])
-                    {
-                        case "Sunday":
-                            sunadydatagrid.Rows.Add("------------");
-                            sunadydatagrid.Rows.Add(dr["lecture"].ToString());
-                            sunadydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
-                            sunadydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + "-" + dr["endTime"].ToString().Substring(0, 5));
-                            sunadydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
-                            break;
-                        case "Monday":
-                            mondaydatagrid.Rows.Add("------------");
-                            mondaydatagrid.Rows.Add(dr["lecture"].ToString());
-                            mondaydatagrid.Rows.Add(dr["prefix"].ToString()+". "+dr["teacher"].ToString());
-                            mondaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
-                            mondaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
-                            break;
-                        case "Tuesday":
-                            tuesdaydatagrid.Rows.Add("------------");
-                            tuesdaydatagrid.Rows.Add(dr["lecture"].ToString());
-                            tuesdaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
-                            tuesdaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
-                            tuesdaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
-                            break;
-                        case "Wednesday":
-                            wednesdaydatagrid.Rows.Add("------------");
-                            wednesdaydatagrid.Rows.Add(dr["lecture"].ToString());
-                            wednesdaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
-                            wednesdaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0,5) + " - " + dr["endTime"].ToString().Substring(0, 5));
-                            wednesdaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
-                            break;
-                        case "Thursday":
-                            thursdaydatagrid.Rows.Add("------------");
-                            thursdaydatagrid.Rows.Add(dr["lecture"].ToString());
-                            thursdaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
-                            thursdaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
-                            thursdaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
-                            break;
-                        case "Friday":
-                            fridaydatagrid.Rows.Add("------------");
-                            fridaydatagrid.Rows.Add(dr["lecture"].ToString());
-                            fridaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
-                            fridaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
-                            fridaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
-                            break;
-                        case "Saturday":
-                            saturdaydatagrid.Rows.Add("------------");
-                            saturdaydatagrid.Rows.Add(dr["lecture"].ToString());
-                            saturdaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
-                            saturdaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
-                            saturdaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
-                            break;
-                        default:
-                            MessageBox.Show("Database error!", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            break;
-                    }
-                    
+                    case "Sunday":
+                        sunadydatagrid.Rows.Add("------------");
+                        sunadydatagrid.Rows.Add(dr["lecture"].ToString());
+                        sunadydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
+                        sunadydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + "-" + dr["endTime"].ToString().Substring(0, 5));
+                        sunadydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
+                        break;
+                    case "Monday":
+                        mondaydatagrid.Rows.Add("------------");
+                        mondaydatagrid.Rows.Add(dr["lecture"].ToString());
+                        mondaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
+                        mondaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
+                        mondaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
+                        break;
+                    case "Tuesday":
+                        tuesdaydatagrid.Rows.Add("------------");
+                        tuesdaydatagrid.Rows.Add(dr["lecture"].ToString());
+                        tuesdaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
+                        tuesdaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
+                        tuesdaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
+                        break;
+                    case "Wednesday":
+                        wednesdaydatagrid.Rows.Add("------------");
+                        wednesdaydatagrid.Rows.Add(dr["lecture"].ToString());
+                        wednesdaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
+                        wednesdaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
+                        wednesdaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
+                        break;
+                    case "Thursday":
+                        thursdaydatagrid.Rows.Add("------------");
+                        thursdaydatagrid.Rows.Add(dr["lecture"].ToString());
+                        thursdaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
+                        thursdaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
+                        thursdaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
+                        break;
+                    case "Friday":
+                        fridaydatagrid.Rows.Add("------------");
+                        fridaydatagrid.Rows.Add(dr["lecture"].ToString());
+                        fridaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
+                        fridaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
+                        fridaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
+                        break;
+                    case "Saturday":
+                        saturdaydatagrid.Rows.Add("------------");
+                        saturdaydatagrid.Rows.Add(dr["lecture"].ToString());
+                        saturdaydatagrid.Rows.Add(dr["prefix"].ToString() + ". " + dr["teacher"].ToString());
+                        saturdaydatagrid.Rows.Add(dr["startTime"].ToString().Substring(0, 5) + " - " + dr["endTime"].ToString().Substring(0, 5));
+                        saturdaydatagrid.Rows.Add("Hall: " + dr["hall_no"].ToString());
+                        break;
+                    default:
+                        MessageBox.Show("Database error!", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
                 }
-            }
-            else
-            {
-                MessageBox.Show("Database error!", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             con.Close();
         }
