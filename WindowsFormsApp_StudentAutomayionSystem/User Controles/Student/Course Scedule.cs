@@ -8,14 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp_StudentAutomayionSystem.Teacher;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp_StudentAutomayionSystem.Student
 {
-    public partial class HomePage : Form
+    public partial class cousrcescedule : UserControl
     {
         private string studentId;
-        public HomePage(string studentId)
+        public cousrcescedule()
         {
             InitializeComponent();
             this.studentId = studentId;
@@ -25,40 +25,29 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
 
-        
-
-        private void HomePage_Load(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            con.Close();
-            con.Open();
-
-            string student = "SELECT * FROM Students WHERE Id='" + studentId + "'";
+            string student = "SELECT * FROM Lectures WHERE Id= (SELECT lecture_id FROM StudentLectures WHERE student_id='" + studentId + "')";
             cmd = new SqlCommand(student, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
 
             if (dr.Read() == true)
             {
-                labelname.Text = dr["name"].ToString() +" "+ dr["surname"].ToString();
-                labelstudentnumber.Text = dr["student_number"].ToString();
+                while (dr.Read())
+                {
+                    listView1.Items.Add("");
+                    listView1.Items.Add(dr["Id"].ToString());
+                    listView1.Items.Add(dr["name"].ToString());
+                    listView1.Items.Add(dr["teacher_id"].ToString());
+                    listView1.Items.Add(dr["startTime"].ToString() + "-" + dr["endTime"].ToString());
+                }
             }
             else
             {
-                MessageBox.Show("Database error!", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);                
+                MessageBox.Show("Database error!", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             con.Close();
-        }
-
-        private void courseSchedule_Click(object sender, EventArgs e)
-        {
-            new Course_Schedule(studentId).Show();
-            this.Close();
-        }
-
-
-        private void cousrcescedule2_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

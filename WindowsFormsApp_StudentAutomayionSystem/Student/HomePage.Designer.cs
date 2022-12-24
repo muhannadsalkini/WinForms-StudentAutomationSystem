@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.userPicture = new System.Windows.Forms.PictureBox();
             this.labelname = new System.Windows.Forms.Label();
             this.labelstudentnumber = new System.Windows.Forms.Label();
             this.takenCourses = new System.Windows.Forms.Button();
@@ -41,33 +40,22 @@
             this.academicCalender = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
+            this.userPicture = new System.Windows.Forms.PictureBox();
+            this.cousrcescedule1 = new WindowsFormsApp_StudentAutomayionSystem.Student.cousrcescedule();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.SuspendLayout();
-            // 
-            // userPicture
-            // 
-            this.userPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userPicture.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.blank_profile_picture;
-            this.userPicture.Location = new System.Drawing.Point(85, 59);
-            this.userPicture.Margin = new System.Windows.Forms.Padding(4);
-            this.userPicture.Name = "userPicture";
-            this.userPicture.Size = new System.Drawing.Size(102, 94);
-            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.userPicture.TabIndex = 0;
-            this.userPicture.TabStop = false;
             // 
             // labelname
             // 
             this.labelname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelname.AutoSize = true;
-            this.labelname.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.labelname.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold);
             this.labelname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.labelname.Location = new System.Drawing.Point(247, 71);
+            this.labelname.Location = new System.Drawing.Point(212, 66);
             this.labelname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelname.Name = "labelname";
-            this.labelname.Size = new System.Drawing.Size(87, 30);
+            this.labelname.Size = new System.Drawing.Size(70, 24);
             this.labelname.TabIndex = 1;
             this.labelname.Text = "Name";
             // 
@@ -76,12 +64,12 @@
             this.labelstudentnumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelstudentnumber.AutoSize = true;
             this.labelstudentnumber.BackColor = System.Drawing.Color.White;
-            this.labelstudentnumber.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelstudentnumber.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold);
             this.labelstudentnumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.labelstudentnumber.Location = new System.Drawing.Point(247, 115);
+            this.labelstudentnumber.Location = new System.Drawing.Point(212, 99);
             this.labelstudentnumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelstudentnumber.Name = "labelstudentnumber";
-            this.labelstudentnumber.Size = new System.Drawing.Size(49, 30);
+            this.labelstudentnumber.Size = new System.Drawing.Size(39, 24);
             this.labelstudentnumber.TabIndex = 2;
             this.labelstudentnumber.Text = "No";
             // 
@@ -112,6 +100,7 @@
             this.courseSchedule.TabIndex = 4;
             this.courseSchedule.Text = "Course Schedule";
             this.courseSchedule.UseVisualStyleBackColor = false;
+            this.courseSchedule.Click += new System.EventHandler(this.courseSchedule_Click);
             // 
             // exmResults
             // 
@@ -203,7 +192,7 @@
             // 
             this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(85, 189);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(85, 160);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(891, 10);
             this.flowLayoutPanel1.TabIndex = 12;
@@ -212,12 +201,34 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(926, 95);
+            this.pictureBox1.Location = new System.Drawing.Point(926, 73);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            // 
+            // userPicture
+            // 
+            this.userPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userPicture.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.blank_profile_picture;
+            this.userPicture.Location = new System.Drawing.Point(100, 57);
+            this.userPicture.Margin = new System.Windows.Forms.Padding(4);
+            this.userPicture.Name = "userPicture";
+            this.userPicture.Size = new System.Drawing.Size(75, 75);
+            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userPicture.TabIndex = 0;
+            this.userPicture.TabStop = false;
+            // 
+            // cousrcescedule1
+            // 
+            this.cousrcescedule1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cousrcescedule1.Location = new System.Drawing.Point(65, 176);
+            this.cousrcescedule1.Name = "cousrcescedule1";
+            this.cousrcescedule1.Size = new System.Drawing.Size(927, 371);
+            this.cousrcescedule1.TabIndex = 14;
+            this.cousrcescedule1.Visible = false;
             // 
             // HomePage
             // 
@@ -243,8 +254,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "homePage";
             this.Load += new System.EventHandler(this.HomePage_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,5 +276,6 @@
         private System.Windows.Forms.Button academicCalender;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private cousrcescedule cousrcescedule1;
     }
 }
