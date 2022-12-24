@@ -39,19 +39,19 @@
             this.academicStatus = new System.Windows.Forms.Button();
             this.notifacations = new System.Windows.Forms.Button();
             this.academicCalender = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.userPicture = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelregesterdate = new System.Windows.Forms.Label();
             this.labelprogram = new System.Windows.Forms.Label();
             this.labelaverage = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.userPicture = new System.Windows.Forms.PictureBox();
             this.cousrcescedule1 = new WindowsFormsApp_StudentAutomayionSystem.Student.cousrcescedule();
             groupBox1 = new System.Windows.Forms.GroupBox();
+            groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
-            groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelname
@@ -203,30 +203,7 @@
             this.academicCalender.TabIndex = 10;
             this.academicCalender.Text = "Academic Calendar";
             this.academicCalender.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(926, 73);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
-            // userPicture
-            // 
-            this.userPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userPicture.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.blank_profile_picture;
-            this.userPicture.Location = new System.Drawing.Point(100, 57);
-            this.userPicture.Margin = new System.Windows.Forms.Padding(4);
-            this.userPicture.Name = "userPicture";
-            this.userPicture.Size = new System.Drawing.Size(75, 75);
-            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.userPicture.TabIndex = 0;
-            this.userPicture.TabStop = false;
+            this.academicCalender.Click += new System.EventHandler(this.academicCalender_Click);
             // 
             // groupBox1
             // 
@@ -251,7 +228,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(36, 9);
+            this.label1.Location = new System.Drawing.Point(37, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 13);
             this.label1.TabIndex = 0;
@@ -262,7 +239,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(411, 9);
+            this.label3.Location = new System.Drawing.Point(412, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 13);
             this.label3.TabIndex = 2;
@@ -273,7 +250,7 @@
             this.labelregesterdate.AutoSize = true;
             this.labelregesterdate.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelregesterdate.ForeColor = System.Drawing.Color.White;
-            this.labelregesterdate.Location = new System.Drawing.Point(50, 25);
+            this.labelregesterdate.Location = new System.Drawing.Point(51, 34);
             this.labelregesterdate.Name = "labelregesterdate";
             this.labelregesterdate.Size = new System.Drawing.Size(77, 13);
             this.labelregesterdate.TabIndex = 3;
@@ -284,7 +261,7 @@
             this.labelprogram.AutoSize = true;
             this.labelprogram.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelprogram.ForeColor = System.Drawing.Color.White;
-            this.labelprogram.Location = new System.Drawing.Point(381, 25);
+            this.labelprogram.Location = new System.Drawing.Point(382, 34);
             this.labelprogram.Name = "labelprogram";
             this.labelprogram.Size = new System.Drawing.Size(132, 13);
             this.labelprogram.TabIndex = 4;
@@ -295,7 +272,7 @@
             this.labelaverage.AutoSize = true;
             this.labelaverage.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelaverage.ForeColor = System.Drawing.Color.White;
-            this.labelaverage.Location = new System.Drawing.Point(809, 25);
+            this.labelaverage.Location = new System.Drawing.Point(810, 34);
             this.labelaverage.Name = "labelaverage";
             this.labelaverage.Size = new System.Drawing.Size(31, 13);
             this.labelaverage.TabIndex = 5;
@@ -306,11 +283,35 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(792, 9);
+            this.label2.Location = new System.Drawing.Point(793, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "AVERAGE";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(926, 73);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // userPicture
+            // 
+            this.userPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userPicture.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.blank_profile_picture;
+            this.userPicture.Location = new System.Drawing.Point(100, 57);
+            this.userPicture.Margin = new System.Windows.Forms.Padding(4);
+            this.userPicture.Name = "userPicture";
+            this.userPicture.Size = new System.Drawing.Size(75, 75);
+            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userPicture.TabIndex = 0;
+            this.userPicture.TabStop = false;
             // 
             // cousrcescedule1
             // 
@@ -345,10 +346,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "homePage";
             this.Load += new System.EventHandler(this.HomePage_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

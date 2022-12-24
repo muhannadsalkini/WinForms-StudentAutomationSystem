@@ -62,5 +62,11 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
         {
 
         }
+
+        private void academicCalender_Click(object sender, EventArgs e)
+        {
+            new AcademicCalender(studentId).Show();
+            this.Close();
+        }
     }
 }
