@@ -32,8 +32,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             con.Close();
             con.Open();
 
-            string student = "SELECT Students.name, surname, student_number, regester_date, Departments.name AS department FROM Students, Departments WHERE Students.Id='" + studentId + "' AND Students.department_id= Departments.Id";
-            cmd = new SqlCommand(student, con);
+            string sqlstatment = "SELECT Students.name, surname, student_number, regester_date, Departments.name AS department FROM Students, Departments WHERE Students.Id='" + studentId + "' AND Students.department_id= Departments.Id";
+            cmd = new SqlCommand(sqlstatment, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
 
@@ -72,6 +72,12 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
         private void semesterAverages_Click(object sender, EventArgs e)
         {
             new SemesterAverages(studentId).Show();
+            this.Close();
+        }
+
+        private void academicStatus_Click(object sender, EventArgs e)
+        {
+            new AcademicStatus(studentId).Show();
             this.Close();
         }
     }

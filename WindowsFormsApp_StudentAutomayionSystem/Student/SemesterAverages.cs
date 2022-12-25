@@ -29,9 +29,9 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             con.Close();
             con.Open();
 
-            string student = "SELECT * FROM SemesterAvrg, Semesters WHERE student_id = '" + studentId + "' AND Semesters.Id = SemesterAvrg.semester_id ORDER BY Semesters.start_date";
+            string sqlstatment = "SELECT * FROM SemesterAvrg, Semesters WHERE student_id = '" + studentId + "' AND Semesters.Id = SemesterAvrg.semester_id ORDER BY Semesters.start_date";
 
-            cmd = new SqlCommand(student, con);
+            cmd = new SqlCommand(sqlstatment, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
 

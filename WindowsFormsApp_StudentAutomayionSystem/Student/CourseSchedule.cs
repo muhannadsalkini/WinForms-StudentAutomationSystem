@@ -29,9 +29,9 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             con.Close();
             con.Open();
 
-            string student = "SELECT day, hall_no, startTime, endTime, Lectures.name as lecture, Teachers.name as teacher, prefix FROM StudentLectures, Teachers, Lectures WHERE lecture_id = Lectures.Id AND Teachers.Id = Lectures.teacher_id AND student_id = '" + studentId + "'";
+            string sqlstatment = "SELECT day, hall_no, startTime, endTime, Lectures.name as lecture, Teachers.name as teacher, prefix FROM StudentLectures, Teachers, Lectures WHERE lecture_id = Lectures.Id AND Teachers.Id = Lectures.teacher_id AND student_id = '" + studentId + "'";
             
-            cmd = new SqlCommand(student, con);
+            cmd = new SqlCommand(sqlstatment, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
 

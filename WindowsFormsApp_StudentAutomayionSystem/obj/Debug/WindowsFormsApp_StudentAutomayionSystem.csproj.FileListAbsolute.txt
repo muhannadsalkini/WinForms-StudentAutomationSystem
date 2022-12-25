@@ -58,3 +58,4 @@ C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionS
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\bin\Debug\LiveCharts.WinForms.xml
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.Student.AcademicStatus.resources

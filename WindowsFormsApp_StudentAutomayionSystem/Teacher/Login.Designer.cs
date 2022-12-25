@@ -75,7 +75,7 @@
             this.buttonclear.FlatAppearance.BorderSize = 0;
             this.buttonclear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonclear.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonclear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonclear.ForeColor = System.Drawing.Color.Teal;
             this.buttonclear.Location = new System.Drawing.Point(45, 351);
             this.buttonclear.Name = "buttonclear";
             this.buttonclear.Size = new System.Drawing.Size(216, 35);
@@ -87,7 +87,7 @@
             // buttonlogin
             // 
             this.buttonlogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonlogin.BackColor = System.Drawing.Color.Teal;
             this.buttonlogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonlogin.FlatAppearance.BorderSize = 0;
             this.buttonlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -165,7 +165,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(39, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 33);

@@ -75,6 +75,12 @@
     <Compile Include="Student\AcademicCalender.Designer.cs">
       <DependentUpon>AcademicCalender.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student\AcademicStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\AcademicStatus.Designer.cs">
+      <DependentUpon>AcademicStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\CourseSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </Compile>
     <EmbeddedResource Include="Student\AcademicCalender.resx">
       <DependentUpon>AcademicCalender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\AcademicStatus.resx">
+      <DependentUpon>AcademicStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\CourseSchedule.resx">
       <DependentUpon>CourseSchedule.cs</DependentUpon>

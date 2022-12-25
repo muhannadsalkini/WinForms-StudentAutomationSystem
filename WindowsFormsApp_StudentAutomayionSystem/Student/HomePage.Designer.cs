@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.GroupBox groupBox1;
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelaverage = new System.Windows.Forms.Label();
             this.labelprogram = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@
             this.academicCalender = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userPicture = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.cousrcescedule1 = new WindowsFormsApp_StudentAutomayionSystem.Student.cousrcescedule();
             groupBox1 = new System.Windows.Forms.GroupBox();
             groupBox1.SuspendLayout();
@@ -75,6 +75,28 @@
             groupBox1.Size = new System.Drawing.Size(891, 56);
             groupBox1.TabIndex = 14;
             groupBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(787, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(24, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "3.5";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(763, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "AVERAGE";
             // 
             // label2
             // 
@@ -262,6 +284,7 @@
             this.academicStatus.TabIndex = 8;
             this.academicStatus.Text = "Academic Status";
             this.academicStatus.UseVisualStyleBackColor = false;
+            this.academicStatus.Click += new System.EventHandler(this.academicStatus_Click);
             // 
             // notifacations
             // 
@@ -317,28 +340,6 @@
             this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.userPicture.TabIndex = 0;
             this.userPicture.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(763, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "AVERAGE";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(787, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "3.5";
             // 
             // cousrcescedule1
             // 

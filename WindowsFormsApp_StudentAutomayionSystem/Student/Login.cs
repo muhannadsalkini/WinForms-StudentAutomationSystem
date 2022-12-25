@@ -28,8 +28,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             con.Close();
             con.Open();
             
-            string login = "SELECT * FROM Students WHERE student_number='" + textboxnumber.Text + "' and password='" + textboxpassword.Text + "'";
-            cmd = new SqlCommand(login, con);
+            string sqlstatment = "SELECT * FROM Students WHERE student_number='" + textboxnumber.Text + "' and password='" + textboxpassword.Text + "'";
+            cmd = new SqlCommand(sqlstatment, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
 
