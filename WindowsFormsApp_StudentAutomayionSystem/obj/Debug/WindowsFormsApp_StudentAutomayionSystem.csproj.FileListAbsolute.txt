@@ -45,7 +45,6 @@ C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionS
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.csproj.CoreCompileInputs.cache
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.exe
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.pdb
-C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.Student.Course_Schedule.resources
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.Student.AcademicCalender.resources
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\bin\Debug\LiveCharts.dll
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\bin\Debug\LiveCharts.pdb
@@ -59,3 +58,4 @@ C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionS
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.Student.AcademicStatus.resources
+C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.Student.CourseSchedule.resources

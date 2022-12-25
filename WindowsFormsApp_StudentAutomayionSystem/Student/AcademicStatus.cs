@@ -58,7 +58,11 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
 
         private void back_Click(object sender, EventArgs e)
         {
-            new HomePage(studentId).Show();
+            var Home_Page = new HomePage(studentId);
+            Home_Page.Location = this.Location;
+            Home_Page.StartPosition = FormStartPosition.Manual;
+            Home_Page.Size = this.Size;
+            Home_Page.Show();
             this.Close();
         }
     }

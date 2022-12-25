@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_StudentAutomayionSystem.Student
 {
-    public partial class Course_Schedule : Form
+    public partial class CourseSchedule : Form
     {
         private string studentId;
-        public Course_Schedule(string studentId)
+        public CourseSchedule(string studentId)
         {
             InitializeComponent();
             this.studentId = studentId;
@@ -99,8 +99,17 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
 
         private void back_Click(object sender, EventArgs e)
         {
-            new HomePage(studentId).Show();
+            var Home_Page = new HomePage(studentId);
+            Home_Page.Location = this.Location;
+            Home_Page.StartPosition = FormStartPosition.Manual;
+            Home_Page.Size = this.Size;
+            Home_Page.Show();
             this.Close();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

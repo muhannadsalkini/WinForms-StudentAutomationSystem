@@ -49,35 +49,47 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
                 MessageBox.Show("Database error!", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);                
             }
             con.Close();
+
+            sqlstatment = "SELECT * FROM Students, Departments WHERE Students.Id='" + studentId + "' AND Students.department_id= Departments.Id";
         }
 
         private void courseSchedule_Click(object sender, EventArgs e)
         {
-            new Course_Schedule(studentId).Show();
+            var Course_Schedule = new CourseSchedule(studentId);
+            Course_Schedule.Location = this.Location;
+            Course_Schedule.StartPosition= FormStartPosition.Manual;
+            Course_Schedule.Size = this.Size;
+            Course_Schedule.Show();
             this.Close();
-        }
-
-
-        private void cousrcescedule2_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void academicCalender_Click(object sender, EventArgs e)
         {
-            new AcademicCalender(studentId).Show();
+            var Academic_Calender = new AcademicCalender(studentId);
+            Academic_Calender.Location = this.Location;
+            Academic_Calender.StartPosition = FormStartPosition.Manual;
+            Academic_Calender.Size = this.Size;
+            Academic_Calender.Show();
             this.Close();
         }
 
         private void semesterAverages_Click(object sender, EventArgs e)
         {
-            new SemesterAverages(studentId).Show();
+            var Semester_Averages = new SemesterAverages(studentId);
+            Semester_Averages.Location = this.Location;
+            Semester_Averages.StartPosition = FormStartPosition.Manual;
+            Semester_Averages.Size = this.Size;
+            Semester_Averages.Show();
             this.Close();
         }
 
         private void academicStatus_Click(object sender, EventArgs e)
         {
-            new AcademicStatus(studentId).Show();
+            var Academic_Status = new AcademicStatus(studentId);
+            Academic_Status.Location = this.Location;
+            Academic_Status.StartPosition = FormStartPosition.Manual;
+            Academic_Status.Size = this.Size;
+            Academic_Status.Show();
             this.Close();
         }
     }
