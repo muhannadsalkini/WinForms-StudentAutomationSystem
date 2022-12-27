@@ -92,5 +92,15 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             Academic_Status.Show();
             this.Close();
         }
+
+        private void exmResults_Click(object sender, EventArgs e)
+        {
+            var Exam_Results = new ExamResults(studentId);
+            Exam_Results.Location = this.Location;
+            Exam_Results.StartPosition = FormStartPosition.Manual;
+            Exam_Results.Size = this.Size;
+            Exam_Results.Show();
+            this.Close();
+        }
     }
 }

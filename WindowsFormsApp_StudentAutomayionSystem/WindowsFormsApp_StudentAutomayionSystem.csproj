@@ -87,6 +87,12 @@
     <Compile Include="Student\CourseSchedule.Designer.cs">
       <DependentUpon>CourseSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student\ExamResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\ExamResults.Designer.cs">
+      <DependentUpon>ExamResults.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Student\CourseSchedule.resx">
       <DependentUpon>CourseSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\ExamResults.resx">
+      <DependentUpon>ExamResults.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>

@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_StudentAutomayionSystem.Student
 {
-    public partial class AcademicCalender : Form
+    public partial class ExamResults : Form
     {
         private string studentId;
-        public AcademicCalender(string studentId)
+        public ExamResults(string studentId)
         {
             InitializeComponent();
             this.studentId = studentId;
@@ -24,12 +24,13 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
 
-        private void AcademicCalender_Load(object sender, EventArgs e)
+        private void ExamResults_Load(object sender, EventArgs e)
         {
             con.Close();
             con.Open();
 
-            string sqlstatment = "SELECT * FROM AcademicCalendars ORDER BY startDate";
+            string sqlstatment = "SELECT Lectures.name, type, score, percentage,  announce_date FROM Examss, Lectures, StudentLectures WHERE StudentLectures.student_id = '"
+                + studentId+ "' AND announce_date IS NOT NULL AND Examss.studentLecture_id = StudentLectures.lecture_id AND Lectures.Id = StudentLectures.lecture_id ORDER BY Lectures.name";
 
             cmd = new SqlCommand(sqlstatment, con);
             cmd.ExecuteNonQuery();
@@ -37,10 +38,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
 
             while (dr.Read())
             {
-                datagrid.Rows.Add(dr["academic_pro"].ToString(), dr["startDate"].ToString().Substring(0, 10), dr["EndDate"].ToString().Substring(0, 10));
+                datagrid.Rows.Add(dr["name"].ToString()+" | "+ dr["type"].ToString(), dr["score"].ToString(), dr["percentage"].ToString()+"%", dr["announce_date"].ToString().Substring(0, 10));
             }
-
-            con.Close();
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -50,7 +49,6 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             Home_Page.StartPosition = FormStartPosition.Manual;
             Home_Page.Size = this.Size;
             Home_Page.Show();
-            //new HomePage(studentId).Show();
             this.Close();
         }
     }
