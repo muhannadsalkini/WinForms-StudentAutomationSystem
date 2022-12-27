@@ -60,3 +60,4 @@ C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionS
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.Student.AcademicStatus.resources
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.Student.CourseSchedule.resources
 C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.Student.ExamResults.resources
+C:\Users\mohan\OneDrive\Masaüstü\New folder\WindowsFormsApp_StudentAutomayionSystem\obj\Debug\WindowsFormsApp_StudentAutomayionSystem.Student.ExamCalendar.resources

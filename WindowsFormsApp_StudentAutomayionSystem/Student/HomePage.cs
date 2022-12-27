@@ -102,5 +102,15 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             Exam_Results.Show();
             this.Close();
         }
+
+        private void examCalendar_Click(object sender, EventArgs e)
+        {
+            var Exam_Calendar = new ExamCalendar(studentId);
+            Exam_Calendar.Location = this.Location;
+            Exam_Calendar.StartPosition = FormStartPosition.Manual;
+            Exam_Calendar.Size = this.Size;
+            Exam_Calendar.Show();
+            this.Close();
+        }
     }
 }
