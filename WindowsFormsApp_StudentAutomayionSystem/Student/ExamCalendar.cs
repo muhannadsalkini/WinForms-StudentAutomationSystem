@@ -28,6 +28,7 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
         {
             string day;
             DateTime date = new DateTime();
+            int Rowcount = 0;
 
             con.Close();
             con.Open();
@@ -41,10 +42,18 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
 
             while (dr.Read())
             {
+                
                 date = (DateTime)dr["date"];
                 day = date.DayOfWeek.ToString();
 
                 datagrid.Rows.Add(dr["name"].ToString() + " | " + dr["type"].ToString(), dr["date"].ToString().Substring(0, 10), day, dr["percentage"].ToString() + "%", dr["prefix"].ToString()+". "+ dr["Teacher"].ToString());
+
+                
+                if (dr["announce_date"].ToString().Length > 1)
+                {
+                    datagrid.Rows[Rowcount].DefaultCellStyle.BackColor = Color.PaleGreen;
+                }
+                Rowcount++;
             }
         }
 
@@ -57,5 +66,7 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             Home_Page.Show();
             this.Close();
         }
+
+        
     }
 }

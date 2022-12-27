@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.datagrid = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.back = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.sundaycolumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.startdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Percentage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Instructor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.back = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,14 +57,14 @@
             this.datagrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.datagrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.datagrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.datagrid.ColumnHeadersHeight = 40;
             this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -74,33 +74,79 @@
             this.Percentage,
             this.Instructor});
             this.datagrid.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagrid.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.datagrid.EnableHeadersVisualStyles = false;
             this.datagrid.GridColor = System.Drawing.Color.Silver;
             this.datagrid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.datagrid.Location = new System.Drawing.Point(34, 96);
             this.datagrid.Name = "datagrid";
             this.datagrid.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.datagrid.RowHeadersVisible = false;
             this.datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.datagrid.RowTemplate.Height = 17;
             this.datagrid.Size = new System.Drawing.Size(1003, 433);
             this.datagrid.TabIndex = 26;
+            // 
+            // sundaycolumn
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.sundaycolumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.sundaycolumn.FillWeight = 89.50787F;
+            this.sundaycolumn.HeaderText = "Lecture";
+            this.sundaycolumn.MinimumWidth = 6;
+            this.sundaycolumn.Name = "sundaycolumn";
+            this.sundaycolumn.ReadOnly = true;
+            this.sundaycolumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // startdate
+            // 
+            this.startdate.FillWeight = 25.95728F;
+            this.startdate.HeaderText = "Date";
+            this.startdate.MinimumWidth = 6;
+            this.startdate.Name = "startdate";
+            this.startdate.ReadOnly = true;
+            this.startdate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // day
+            // 
+            this.day.FillWeight = 25.95728F;
+            this.day.HeaderText = "Day";
+            this.day.MinimumWidth = 6;
+            this.day.Name = "day";
+            this.day.ReadOnly = true;
+            this.day.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Percentage
+            // 
+            this.Percentage.FillWeight = 25.95728F;
+            this.Percentage.HeaderText = "Percentage";
+            this.Percentage.MinimumWidth = 6;
+            this.Percentage.Name = "Percentage";
+            this.Percentage.ReadOnly = true;
+            this.Percentage.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Instructor
+            // 
+            this.Instructor.FillWeight = 80F;
+            this.Instructor.HeaderText = "Instructor";
+            this.Instructor.MinimumWidth = 6;
+            this.Instructor.Name = "Instructor";
+            this.Instructor.ReadOnly = true;
             // 
             // tableLayoutPanel1
             // 
@@ -144,52 +190,6 @@
             this.label1.Size = new System.Drawing.Size(234, 33);
             this.label1.TabIndex = 21;
             this.label1.Text = "Exam Calendar";
-            // 
-            // sundaycolumn
-            // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.sundaycolumn.DefaultCellStyle = dataGridViewCellStyle10;
-            this.sundaycolumn.FillWeight = 89.50787F;
-            this.sundaycolumn.HeaderText = "Lecture";
-            this.sundaycolumn.MinimumWidth = 6;
-            this.sundaycolumn.Name = "sundaycolumn";
-            this.sundaycolumn.ReadOnly = true;
-            this.sundaycolumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // startdate
-            // 
-            this.startdate.FillWeight = 25.95728F;
-            this.startdate.HeaderText = "Date";
-            this.startdate.MinimumWidth = 6;
-            this.startdate.Name = "startdate";
-            this.startdate.ReadOnly = true;
-            this.startdate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // day
-            // 
-            this.day.FillWeight = 25.95728F;
-            this.day.HeaderText = "Day";
-            this.day.MinimumWidth = 6;
-            this.day.Name = "day";
-            this.day.ReadOnly = true;
-            this.day.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Percentage
-            // 
-            this.Percentage.FillWeight = 25.95728F;
-            this.Percentage.HeaderText = "Percentage";
-            this.Percentage.MinimumWidth = 6;
-            this.Percentage.Name = "Percentage";
-            this.Percentage.ReadOnly = true;
-            this.Percentage.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Instructor
-            // 
-            this.Instructor.FillWeight = 80F;
-            this.Instructor.HeaderText = "Instructor";
-            this.Instructor.MinimumWidth = 6;
-            this.Instructor.Name = "Instructor";
-            this.Instructor.ReadOnly = true;
             // 
             // ExamCalendar
             // 
