@@ -47,18 +47,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.userPicture = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.userPicture = new System.Windows.Forms.PictureBox();
-            this.cousrcescedule1 = new WindowsFormsApp_StudentAutomayionSystem.Student.cousrcescedule();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -150,7 +149,7 @@
             // 
             this.labelstudentnumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelstudentnumber.AutoSize = true;
-            this.labelstudentnumber.BackColor = System.Drawing.Color.White;
+            this.labelstudentnumber.BackColor = System.Drawing.Color.Transparent;
             this.labelstudentnumber.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold);
             this.labelstudentnumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.labelstudentnumber.Location = new System.Drawing.Point(4, 52);
@@ -271,6 +270,7 @@
             this.notifacations.TabIndex = 9;
             this.notifacations.Text = "Notifacations";
             this.notifacations.UseVisualStyleBackColor = false;
+            this.notifacations.Click += new System.EventHandler(this.notifacations_Click);
             // 
             // academicCalender
             // 
@@ -324,7 +324,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.85557F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.14442F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 264F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.userPicture, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
@@ -335,6 +335,30 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(891, 92);
             this.tableLayoutPanel1.TabIndex = 17;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(811, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // userPicture
+            // 
+            this.userPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userPicture.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.blank_profile_picture;
+            this.userPicture.Location = new System.Drawing.Point(4, 8);
+            this.userPicture.Margin = new System.Windows.Forms.Padding(4);
+            this.userPicture.Name = "userPicture";
+            this.userPicture.Size = new System.Drawing.Size(74, 75);
+            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userPicture.TabIndex = 0;
+            this.userPicture.TabStop = false;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -342,7 +366,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.labelname, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.labelstudentnumber, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(87, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(85, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -399,39 +423,6 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(891, 228);
             this.tableLayoutPanel4.TabIndex = 19;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(820, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
-            // userPicture
-            // 
-            this.userPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userPicture.Image = global::WindowsFormsApp_StudentAutomayionSystem.Properties.Resources.blank_profile_picture;
-            this.userPicture.Location = new System.Drawing.Point(4, 8);
-            this.userPicture.Margin = new System.Windows.Forms.Padding(4);
-            this.userPicture.Name = "userPicture";
-            this.userPicture.Size = new System.Drawing.Size(75, 75);
-            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.userPicture.TabIndex = 0;
-            this.userPicture.TabStop = false;
-            // 
-            // cousrcescedule1
-            // 
-            this.cousrcescedule1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cousrcescedule1.Location = new System.Drawing.Point(65, 176);
-            this.cousrcescedule1.Name = "cousrcescedule1";
-            this.cousrcescedule1.Size = new System.Drawing.Size(927, 371);
-            this.cousrcescedule1.TabIndex = 14;
-            this.cousrcescedule1.Visible = false;
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -449,13 +440,13 @@
             this.Text = "Home";
             this.Load += new System.EventHandler(this.HomePage_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

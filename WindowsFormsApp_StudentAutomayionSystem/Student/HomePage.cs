@@ -112,5 +112,15 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             Exam_Calendar.Show();
             this.Close();
         }
+
+        private void notifacations_Click(object sender, EventArgs e)
+        {
+            var Notifications_ = new Notifications(studentId);
+            Notifications_.Location = this.Location;
+            Notifications_.StartPosition = FormStartPosition.Manual;
+            Notifications_.Size = this.Size;
+            Notifications_.Show();
+            this.Close();
+        }
     }
 }

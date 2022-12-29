@@ -111,6 +111,12 @@
     <Compile Include="Student\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student\Notifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Notifications.Designer.cs">
+      <DependentUpon>Notifications.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\SemesterAverages.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Student\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\Notifications.resx">
+      <DependentUpon>Notifications.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\SemesterAverages.resx">
       <DependentUpon>SemesterAverages.cs</DependentUpon>
