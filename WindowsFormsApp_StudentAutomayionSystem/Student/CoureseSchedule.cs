@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_StudentAutomayionSystem.Student
 {
-    public partial class AcademicCalender : Form
+    public partial class CoureseSchedule : Form
     {
         private string studentId;
-        public AcademicCalender(string studentId)
+        public CoureseSchedule(string studentId)
         {
             InitializeComponent();
             this.studentId = studentId;
@@ -24,35 +24,38 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
 
-        private void AcademicCalender_Load(object sender, EventArgs e)
+        private void labelname_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CoureseSchedule_Load(object sender, EventArgs e)
         {
             con.Close();
             con.Open();
 
-            string sqlstatment = "SELECT * FROM AcademicCalendars ORDER BY startDate";
-
-            cmd = new SqlCommand(sqlstatment, con);
+            string student = "SELECT * FROM Students WHERE Id='" + studentId + "'";
+            cmd = new SqlCommand(student, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
 
-            while (dr.Read())
+            if (dr.Read() == true)
             {
-                datagrid.Rows.Add(dr["academic_pro"].ToString(), dr["startDate"].ToString().Substring(0, 10), 
-                    dr["EndDate"].ToString().Substring(0, 10));
+                labelname.Text = dr["name"].ToString() + " " + dr["surname"].ToString();
+                labelstudentnumber.Text = dr["student_number"].ToString();
             }
-
+            else
+            {
+                MessageBox.Show("Database error!", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             con.Close();
         }
 
-        private void back_Click(object sender, EventArgs e)
+        private void labelback_Click(object sender, EventArgs e)
         {
-            var Home_Page = new HomePage(studentId);
-            Home_Page.Location = this.Location;
-            Home_Page.StartPosition = FormStartPosition.Manual;
-            Home_Page.Size = this.Size;
-            Home_Page.Show();
-            //new HomePage(studentId).Show();
+            new HomePage(studentId).Show();
             this.Close();
         }
+    
     }
 }

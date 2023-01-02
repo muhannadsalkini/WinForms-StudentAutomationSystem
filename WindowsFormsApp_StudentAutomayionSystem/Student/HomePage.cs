@@ -32,7 +32,9 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             con.Close();
             con.Open();
 
-            string sqlstatment = "SELECT Students.name, surname, student_number, regester_date, Departments.name AS department FROM Students, Departments WHERE Students.Id='" + studentId + "' AND Students.department_id= Departments.Id";
+            string sqlstatment = "SELECT Students.name, surname, student_number, regester_date, " +
+                "Departments.name AS department FROM Students, Departments WHERE Students.Id='" +
+                studentId + "' AND Students.department_id= Departments.Id";
             cmd = new SqlCommand(sqlstatment, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
@@ -50,7 +52,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             }
             con.Close();
 
-            sqlstatment = "SELECT * FROM Students, Departments WHERE Students.Id='" + studentId + "' AND Students.department_id= Departments.Id";
+            sqlstatment = "SELECT * FROM Students, Departments WHERE Students.Id='" + studentId +
+                "' AND Students.department_id= Departments.Id";
         }
 
         private void courseSchedule_Click(object sender, EventArgs e)

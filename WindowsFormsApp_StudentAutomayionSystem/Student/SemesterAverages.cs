@@ -29,7 +29,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             con.Close();
             con.Open();
 
-            string sqlstatment = "SELECT * FROM SemesterAvrg, Semesters WHERE student_id = '" + studentId + "' AND Semesters.Id = SemesterAvrg.semester_id ORDER BY Semesters.start_date";
+            string sqlstatment = "SELECT * FROM SemesterAvrg, Semesters WHERE student_id = '" + studentId +
+                "' AND Semesters.Id = SemesterAvrg.semester_id ORDER BY Semesters.start_date";
 
             cmd = new SqlCommand(sqlstatment, con);
             cmd.ExecuteNonQuery();
@@ -40,7 +41,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
 
             while (dr.Read())
             {
-                chart1.Series["Average"].Points.AddXY(dr["academic_year"].ToString() + " " + dr["type"].ToString(), dr["avrg"]);
+                chart1.Series["Average"].Points.AddXY(dr["academic_year"].ToString() + " " + 
+                    dr["type"].ToString(), dr["avrg"]);
             }
 
         }

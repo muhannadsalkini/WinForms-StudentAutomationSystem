@@ -39,7 +39,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
 
             while (dr.Read())
             {
-                datagrid.Rows.Add(dr["header"].ToString(), dr["type"].ToString(), dr["date"].ToString().Substring(0, 10), dr["status"].ToString(), dr["Id"].ToString());
+                datagrid.Rows.Add(dr["header"].ToString(), dr["type"].ToString(), dr["date"].ToString().Substring(0, 10),
+                    dr["status"].ToString(), dr["Id"].ToString());
                 
                 if (dr["status"].ToString() == "True")
                     datagrid.Rows[Rowcount].DefaultCellStyle.BackColor = Color.PaleGreen;

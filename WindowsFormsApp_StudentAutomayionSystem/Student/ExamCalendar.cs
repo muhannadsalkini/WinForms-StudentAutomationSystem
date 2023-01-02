@@ -33,8 +33,10 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             con.Close();
             con.Open();
 
-            string sqlstatment = "SELECT Lectures.name, type, percentage,  date, Teachers.prefix, Teachers.name AS Teacher, announce_date FROM Examss, Lectures, StudentLectures, Teachers WHERE StudentLectures.student_id = '"
-                + studentId + "' AND Examss.studentLecture_id = StudentLectures.lecture_id AND Lectures.Id = StudentLectures.lecture_id AND Lectures.teacher_id = Teachers.Id ORDER BY Lectures.name, date";
+            string sqlstatment = "SELECT Lectures.name, type, percentage,  date, Teachers.prefix, Teachers.name AS Teacher, " +
+                "announce_date FROM Examss, Lectures, StudentLectures, Teachers WHERE StudentLectures.student_id = '"
+                + studentId + "' AND Examss.studentLecture_id = StudentLectures.lecture_id AND Lectures.Id = StudentLectures.lecture_id " +
+                "AND Lectures.teacher_id = Teachers.Id ORDER BY Lectures.name, date";
 
             cmd = new SqlCommand(sqlstatment, con);
             cmd.ExecuteNonQuery();
@@ -46,7 +48,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
                 date = (DateTime)dr["date"];
                 day = date.DayOfWeek.ToString();
 
-                datagrid.Rows.Add(dr["name"].ToString() + " | " + dr["type"].ToString(), dr["date"].ToString().Substring(0, 10), day, dr["percentage"].ToString() + "%", dr["prefix"].ToString()+". "+ dr["Teacher"].ToString());
+                datagrid.Rows.Add(dr["name"].ToString() + " | " + dr["type"].ToString(), dr["date"].ToString().Substring(0, 10), 
+                    day, dr["percentage"].ToString() + "%", dr["prefix"].ToString()+". "+ dr["Teacher"].ToString());
 
                 
                 if (dr["announce_date"].ToString().Length > 1)

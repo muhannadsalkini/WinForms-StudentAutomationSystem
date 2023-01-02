@@ -29,8 +29,9 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             con.Close();
             con.Open();
 
-            string sqlstatment = "SELECT Lectures.name, type, score, percentage,  announce_date FROM Examss, Lectures, StudentLectures WHERE StudentLectures.student_id = '"
-                + studentId+ "' AND announce_date IS NOT NULL AND Examss.studentLecture_id = StudentLectures.lecture_id AND Lectures.Id = StudentLectures.lecture_id ORDER BY Lectures.name";
+            string sqlstatment = "SELECT Lectures.name, type, score, percentage,  announce_date FROM Examss, Lectures, " +
+                "StudentLectures WHERE StudentLectures.student_id = '" + studentId+ "' AND announce_date IS NOT NULL " +
+                "AND Examss.studentLecture_id = StudentLectures.lecture_id AND Lectures.Id = StudentLectures.lecture_id ORDER BY Lectures.name";
 
             cmd = new SqlCommand(sqlstatment, con);
             cmd.ExecuteNonQuery();
@@ -38,7 +39,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
 
             while (dr.Read())
             {
-                datagrid.Rows.Add(dr["name"].ToString()+" | "+ dr["type"].ToString(), dr["score"].ToString(), dr["percentage"].ToString()+"%", dr["announce_date"].ToString().Substring(0, 10));
+                datagrid.Rows.Add(dr["name"].ToString()+" | "+ dr["type"].ToString(), dr["score"].ToString(), 
+                    dr["percentage"].ToString()+"%", dr["announce_date"].ToString().Substring(0, 10));
             }
         }
 
