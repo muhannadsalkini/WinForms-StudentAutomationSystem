@@ -28,7 +28,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             con.Close();
             con.Open();
             
-            string sqlstatment = "SELECT * FROM Students WHERE student_number='" + textboxnumber.Text + "' and password='" + textboxpassword.Text + "'";
+            string sqlstatment = "SELECT * FROM Students WHERE student_number='" + textboxnumber.Text 
+                + "' and password='" + textboxpassword.Text + "'";
             cmd = new SqlCommand(sqlstatment, con);
             cmd.ExecuteNonQuery();
             SqlDataReader dr = cmd.ExecuteReader();
@@ -42,7 +43,8 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             }
             else
             {
-                MessageBox.Show("Wrong Student number or password!", "Login faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Wrong Student number or password!", "Login faild", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textboxnumber.Text = string.Empty;
                 textboxpassword.Text = string.Empty;
                 textboxnumber.Focus();
@@ -73,11 +75,6 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
         {
             new home().Show();
             this.Hide();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

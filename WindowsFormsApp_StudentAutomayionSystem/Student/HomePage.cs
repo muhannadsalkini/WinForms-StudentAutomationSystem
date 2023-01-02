@@ -122,5 +122,11 @@ namespace WindowsFormsApp_StudentAutomayionSystem.Student
             Notifications_.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Login().Show();
+        }
     }
 }
